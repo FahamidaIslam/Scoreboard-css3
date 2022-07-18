@@ -167,14 +167,39 @@ hr {
     }
 
     .player,
-    .blog,
-    .courses {
+    .blog {
         flex-direction: column;
-        /* justify-content: center; */
     }
 
+    .courses {
+        flex-direction: column;
+        align-items: center;
 
 
+    }
+}
 
+/* tablet devices */
 
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .course {
+        align-content: space-around;
+        padding: 20px;
+    }
 }
